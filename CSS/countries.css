@@ -1,0 +1,19 @@
+.grid-container-flags{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+
+}
+
+.flag{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: fit-content;
+  padding: 1rem;
+}
+
+.flag > img{
+  height: 250px;
+  width: 400px;
+}
