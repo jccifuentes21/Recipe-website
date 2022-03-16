@@ -50,9 +50,7 @@ body {
     justify-content: space-between;
     padding-top: 10%;
 }
-.reco-recipe-sent .active{
-    display: block;
-}
+
 /* .reco-recipe-sent1,.reco-recipe-sent2,.reco-recipe-sent3,.reco-recipe-sent4{
     display: block;
 } */
@@ -65,7 +63,7 @@ body {
     width: 100%;
 }
 
-.reco-recipe-sent {
+.reco-recipe-sent,.reco-recipe-sent1,.reco-recipe-sent2,.reco-recipe-sent3{
     width: 45%;
 }
 

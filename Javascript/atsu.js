@@ -529,13 +529,15 @@ recipe1.classList.add('none')
 recipe2.classList.add('none')
 recipe3.classList.add('none')
     const picEL = document.getElementById('pic-today');
-    const images = ['Images/home-pic/chicken-home.jpg','images/home-pic/doner.jpg','Images/home-pic/coro-meal.jpg','Images/home-pic/tacos.jpg']
+    const images = ['Images/home-pic/chicken-home.jpg','Images/home-pic/tacos.jpg','images/home-pic/doner.jpg','Images/home-pic/coro-meal.jpg']
     const imageNo = Math.floor( Math.random() * images.length)
-    if(imageNo == 2){
+    if(imageNo == 0){
+        recipe.classList.remove('none')
+    }else if(imageNo == 1){
         recipe1.classList.remove('none')
-    }else if(imageNo == 3){
+    }else if(imageNo == 2){
         recipe2.classList.remove('none')
-    }else if(imageNo == 4){
+    }else if(imageNo == 3){
         recipe3.classList.remove('none')
     }
     picEL.src = images[imageNo];
