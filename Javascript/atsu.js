@@ -431,86 +431,112 @@
 
 
 
-const $ = selector => {
-    return document.querySelector(selector);
-};
+// const $ = selector => {
+//     return document.querySelector(selector);
+// };
 
-function next() {
-    if ($(".hide")) {
-        $(".hide").remove();
+// function next() {
+//     if ($(".hide")) {
+//         $(".hide").remove();
+//     }
+
+//     /* Step */
+
+//     if ($(".prev")) {
+//         $(".prev").classList.add("hide");
+//         $(".prev").classList.remove("prev");
+//     }
+
+//     $(".act").classList.add("prev");
+//     $(".act").classList.remove("act");
+
+//     $(".next").classList.add("act");
+//     $(".next").classList.remove("next");
+
+//     /* New Next */
+
+//     $(".new-next").classList.remove("new-next");
+
+//     const addedEl = document.createElement('li');
+
+//     $(".list").appendChild(addedEl);
+//     addedEl.classList.add("next", "new-next");
+// }
+
+// function prev() {
+//     $(".new-next").remove();
+
+//     /* Step */
+
+//     $(".next").classList.add("new-next");
+
+//     $(".act").classList.add("next");
+//     $(".act").classList.remove("act");
+
+//     $(".prev").classList.add("act");
+//     $(".prev").classList.remove("prev");
+
+//     /* New Prev */
+
+//     $(".hide").classList.add("prev");
+//     $(".hide").classList.remove("hide");
+
+//     const addedEl = document.createElement('li');
+
+//     $(".list").insertBefore(addedEl, $(".list").firstChild);
+//     addedEl.classList.add("hide");
+// }
+
+// slide = element => {
+//     /* Next slide */
+
+//     if (element.classList.contains('next')) {
+//         next();
+
+//         /* Previous slide */
+
+//     } else if (element.classList.contains('prev')) {
+//         prev();
+//     }
+// }
+
+// const slider = $(".list"),
+//     swipe = new Hammer($(".swipe"));
+
+// slider.onclick = event => {
+//     slide(event.target);
+// }
+
+// swipe.on("swipeleft", (ev) => {
+//     next();
+// });
+
+// swipe.on("swiperight", (ev) => {
+//     prev();
+// });
+const recipe = document.querySelector('.reco-recipe-sent')
+const recipe1 = document.querySelector('.reco-recipe-sent1')
+const recipe2 = document.querySelector('.reco-recipe-sent2')
+const recipe3 = document.querySelector('.reco-recipe-sent3')
+recipe.classList.add('none')
+recipe1.classList.add('none')
+recipe2.classList.add('none')
+recipe3.classList.add('none')
+
+function change(){
+recipe.classList.add('none')
+recipe1.classList.add('none')
+recipe2.classList.add('none')
+recipe3.classList.add('none')
+    const picEL = document.getElementById('pic-today');
+    const images = ['Images/home-pic/chicken-home.jpg','images/home-pic/doner.jpg','Images/home-pic/coro-meal.jpg','Images/home-pic/tacos.jpg']
+    const imageNo = Math.floor( Math.random() * images.length)
+    if(imageNo == 2){
+        recipe1.classList.remove('none')
+    }else if(imageNo == 3){
+        recipe2.classList.remove('none')
+    }else if(imageNo == 4){
+        recipe3.classList.remove('none')
     }
-
-    /* Step */
-
-    if ($(".prev")) {
-        $(".prev").classList.add("hide");
-        $(".prev").classList.remove("prev");
-    }
-
-    $(".act").classList.add("prev");
-    $(".act").classList.remove("act");
-
-    $(".next").classList.add("act");
-    $(".next").classList.remove("next");
-
-    /* New Next */
-
-    $(".new-next").classList.remove("new-next");
-
-    const addedEl = document.createElement('li');
-
-    $(".list").appendChild(addedEl);
-    addedEl.classList.add("next", "new-next");
+    picEL.src = images[imageNo];
 }
-
-function prev() {
-    $(".new-next").remove();
-
-    /* Step */
-
-    $(".next").classList.add("new-next");
-
-    $(".act").classList.add("next");
-    $(".act").classList.remove("act");
-
-    $(".prev").classList.add("act");
-    $(".prev").classList.remove("prev");
-
-    /* New Prev */
-
-    $(".hide").classList.add("prev");
-    $(".hide").classList.remove("hide");
-
-    const addedEl = document.createElement('li');
-
-    $(".list").insertBefore(addedEl, $(".list").firstChild);
-    addedEl.classList.add("hide");
-}
-
-slide = element => {
-    /* Next slide */
-
-    if (element.classList.contains('next')) {
-        next();
-
-        /* Previous slide */
-
-    } else if (element.classList.contains('prev')) {
-        prev();
-    }
-}
-
-const slider = $(".list"),
-    swipe = new Hammer($(".swipe"));
-
-slider.onclick = event => {
-    slide(event.target);
-}
-
-swipe.on("swipeleft", (ev) => {
-    next();
-});
-
-swipe.on("swiperight", (ev) => {
-    prev();
-});

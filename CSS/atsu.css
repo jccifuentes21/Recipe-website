@@ -10,7 +10,9 @@ a {
 body {
     overflow-x: hidden;
 }
-
+.none{
+    display: none;
+}
 .hero-page{
     width: 100%;
     background-color: aliceblue;
@@ -48,6 +50,12 @@ body {
     justify-content: space-between;
     padding-top: 10%;
 }
+.reco-recipe-sent .active{
+    display: block;
+}
+/* .reco-recipe-sent1,.reco-recipe-sent2,.reco-recipe-sent3,.reco-recipe-sent4{
+    display: block;
+} */
 
 .pic-box {
     width: 40%;
@@ -107,7 +115,9 @@ body {
 .footer-box p {
     padding-right: 5%;
 }
-
+.pic-hero{
+    width: 400px;
+}
 .list {
     height: 200px;
     position: absolute;
