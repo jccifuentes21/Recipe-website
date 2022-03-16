@@ -1,0 +1,174 @@
+a {
+    text-decoration: none;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.hero-page{
+    width: 100%;
+    background-color: aliceblue;
+    position: relative;
+    height: 300px;
+}
+.container {
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* title */
+.title-today::after, .title-intro::after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #121212;
+    margin: -17px 0 35px;
+}
+
+.title-today, .title-intro {
+    text-align: center;
+}
+
+.title-today span, .title-intro span {
+    background-color: #fff;
+    padding: 10px;
+    letter-spacing: 3px;
+}
+
+/* Today's recipe */
+.reco-recipe {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+}
+
+.pic-box {
+    width: 40%;
+}
+
+.pic-today {
+    width: 100%;
+}
+
+.reco-recipe-sent {
+    width: 45%;
+}
+
+.btn {
+    border: 1px solid;
+    display: inline-block;
+    padding: 1%;
+    margin: 4%;
+    text-transform: uppercase;
+}
+
+/* intro Author */
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.indivi {
+    width: 50%;
+    padding-top: 5%;
+}
+
+.atsu, .naomi, .juan, .ozan {
+    width: 50%;
+}
+
+.name {
+    padding: 5% 0 0 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.indivi-sent {
+    width: 80%;
+    padding-top: 5%;
+    margin: 0 auto;
+}
+
+/* footer */
+.footer-box {
+    display: flex;
+    margin: 2% 5% 0 5%;
+}
+
+.footer-box p {
+    padding-right: 5%;
+}
+
+.list {
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+.list li {
+    list-style-type: none;
+
+    width: 200px;
+    height: 200px;
+    opacity: .25;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    border-radius: 2px;
+    background: #9C89B8;
+    transition: transform 1s, opacity 1s;
+}
+
+.list .act {
+    opacity: 1;
+}
+
+.list .prev,
+.list .next {
+    cursor: pointer;
+}
+
+.list .prev {
+    transform: translateX(-220px) scale(.85);
+}
+
+.list .next {
+    transform: translateX(220px) scale(.85);
+}
+
+.list .hide {
+    transform: translateX(-420px) scale(.85);
+}
+
+.list .new-next {
+    transform: translateX(420px) scale(.85);
+}
+
+.list .hide,
+.list .new-next {
+    opacity: 0;
+    transition: opacity .5s, transform .5s;
+}
+
+.swipe {
+    width: 270px;
+    height: 200px;
+    position: absolute;
+    background-color: green;
+    border-radius: 2px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
