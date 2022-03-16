@@ -431,86 +431,122 @@
 
 
 
-const $ = selector => {
-    return document.querySelector(selector);
-};
+// const $ = selector => {
+//     return document.querySelector(selector);
+// };
 
-function next() {
-    if ($(".hide")) {
-        $(".hide").remove();
-    }
+// function next() {
+//     if ($(".hide")) {
+//         $(".hide").remove();
+//     }
 
-    /* Step */
+//     /* Step */
 
-    if ($(".prev")) {
-        $(".prev").classList.add("hide");
-        $(".prev").classList.remove("prev");
-    }
+//     if ($(".prev")) {
+//         $(".prev").classList.add("hide");
+//         $(".prev").classList.remove("prev");
+//     }
 
-    $(".act").classList.add("prev");
-    $(".act").classList.remove("act");
+//     $(".act").classList.add("prev");
+//     $(".act").classList.remove("act");
 
-    $(".next").classList.add("act");
-    $(".next").classList.remove("next");
+//     $(".next").classList.add("act");
+//     $(".next").classList.remove("next");
 
-    /* New Next */
+//     /* New Next */
 
-    $(".new-next").classList.remove("new-next");
+//     $(".new-next").classList.remove("new-next");
 
-    const addedEl = document.createElement('li');
+//     const addedEl = document.createElement('li');
 
-    $(".list").appendChild(addedEl);
-    addedEl.classList.add("next", "new-next");
+//     $(".list").appendChild(addedEl);
+//     addedEl.classList.add("next", "new-next");
+// }
+
+// function prev() {
+//     $(".new-next").remove();
+
+//     /* Step */
+
+//     $(".next").classList.add("new-next");
+
+//     $(".act").classList.add("next");
+//     $(".act").classList.remove("act");
+
+//     $(".prev").classList.add("act");
+//     $(".prev").classList.remove("prev");
+
+//     /* New Prev */
+
+//     $(".hide").classList.add("prev");
+//     $(".hide").classList.remove("hide");
+
+//     const addedEl = document.createElement('li');
+
+//     $(".list").insertBefore(addedEl, $(".list").firstChild);
+//     addedEl.classList.add("hide");
+// }
+
+// slide = element => {
+//     /* Next slide */
+
+//     if (element.classList.contains('next')) {
+//         next();
+
+//         /* Previous slide */
+
+//     } else if (element.classList.contains('prev')) {
+//         prev();
+//     }
+// }
+
+// const slider = $(".list"),
+//     swipe = new Hammer($(".swipe"));
+
+// slider.onclick = event => {
+//     slide(event.target);
+// }
+
+// swipe.on("swipeleft", (ev) => {
+//     next();
+// });
+
+// swipe.on("swiperight", (ev) => {
+//     prev();
+// });
+const recipe = document.querySelector('.reco-recipe-sent')
+const recipe1 = document.querySelector('.reco-recipe-sent1')
+const recipe2 = document.querySelector('.reco-recipe-sent2')
+const recipe3 = document.querySelector('.reco-recipe-sent3')
+const btnEl = document.querySelector('.btn')
+const btn1El = document.querySelector('.btn1')
+const btn2El = document.querySelector('.btn2')
+const btn3El = document.querySelector('.btn3')
+btnEl.classList.add('none')
+btn1El.classList.add('none')
+btn2El.classList.add('none')
+btn3El.classList.add('none')
+
+recipe.classList.add('none')
+recipe1.classList.add('none')
+recipe2.classList.add('none')
+recipe3.classList.add('none')
+const picEL = document.getElementById('pic-today');
+const images = ['Images/home-pic/chicken-home.jpg', 'Images/home-pic/tacos.jpg', 'images/home-pic/doner.jpg', 'Images/home-pic/coro-meal.jpg']
+const imageNo = Math.floor(Math.random() * images.length)
+if (imageNo == 0) {
+    recipe.classList.remove('none')
+    btnEl.classList.remove('none')
+} else if (imageNo == 1) {
+    recipe1.classList.remove('none')
+    btn1El.classList.remove('none')
+} else if (imageNo == 2) {
+    recipe2.classList.remove('none')
+    btn2El.classList.remove('none')
+} else if (imageNo == 3) {
+    recipe3.classList.remove('none')
+    btn3El.classList.remove('none')
 }
+picEL.src = images[imageNo];
 
-function prev() {
-    $(".new-next").remove();
-
-    /* Step */
-
-    $(".next").classList.add("new-next");
-
-    $(".act").classList.add("next");
-    $(".act").classList.remove("act");
-
-    $(".prev").classList.add("act");
-    $(".prev").classList.remove("prev");
-
-    /* New Prev */
-
-    $(".hide").classList.add("prev");
-    $(".hide").classList.remove("hide");
-
-    const addedEl = document.createElement('li');
-
-    $(".list").insertBefore(addedEl, $(".list").firstChild);
-    addedEl.classList.add("hide");
-}
-
-slide = element => {
-    /* Next slide */
-
-    if (element.classList.contains('next')) {
-        next();
-
-        /* Previous slide */
-
-    } else if (element.classList.contains('prev')) {
-        prev();
-    }
-}
-
-const slider = $(".list"),
-    swipe = new Hammer($(".swipe"));
-
-slider.onclick = event => {
-    slide(event.target);
-}
-
-swipe.on("swipeleft", (ev) => {
-    next();
-});
-
-swipe.on("swiperight", (ev) => {
-    prev();
-});
+$("reco-recipe").fadeIn("slow");
