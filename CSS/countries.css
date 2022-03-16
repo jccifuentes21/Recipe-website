@@ -1,19 +1,46 @@
-.grid-container-flags{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+.container{
+  display: flex;
+  flex-direction: column;
+  margin-top: -1rem;
 
 }
+ .country{
+   display: flex;
+   height: calc(100vh - 4rem);
+}
 
-.flag{
+.country.colombia{
+  background-image: url("../Images/colombia-bg.avif");
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+.country.japan{
+  background-image: url("../Images/japan-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+
+}
+.country.mexico{
+  background-image: url("../Images/mexico-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.country.turkey{
+  background-image: url("../Images/turkey-bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.flag, .info{
   display: flex;
   align-items: center;
   justify-content: center;
-  height: fit-content;
-  padding: 1rem;
+  text-align: center;
+  width: 50%;
 }
 
-.flag > img{
-  height: 250px;
-  width: 400px;
+.flag img{
+  height: 50%;
 }
