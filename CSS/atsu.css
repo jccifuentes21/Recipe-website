@@ -11,7 +11,7 @@ body {
     overflow-x: hidden;
 }
 .none{
-    display: none;
+    display: none !important;
 }
 .hero-page{
     width: 100%;
@@ -60,14 +60,14 @@ body {
 }
 
 .pic-today {
-    width: 100%;
+    width: 300px;
 }
 
 .reco-recipe-sent,.reco-recipe-sent1,.reco-recipe-sent2,.reco-recipe-sent3{
     width: 45%;
 }
 
-.btn {
+.btn,.btn1,.btn2,.btn3 {
     border: 1px solid;
     display: inline-block;
     padding: 1%;
