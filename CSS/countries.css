@@ -13,26 +13,56 @@ html{
    height: calc(100vh - 4rem);
 }
 
-.country.colombia{
-  background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Images/colombia-bg.avif");
-  background-attachment: fixed;
-  background-size: cover;
+.view-image{
+  position: absolute;
+  height: fit-content;
+  width: fit-content;
+  padding: 1em;
+  cursor: pointer;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1em;
+  color: white;
+  transition: 500ms;
+}
+
+.view-image:hover{
+  background-color: black;
+  transition: 500ms;
+}
+
+.scroll-down{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  font-size: 15rem;
+  color: rgb(133, 133, 133);
+  background-color: rgba(0, 0, 0, 0.50);
 
 }
+
+.country.colombia{
+  background-image: url("../Images/colombia-bg.avif");
+  background-attachment: fixed;
+  background-size: cover;
+}
 .country.japan{
-  background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Images/japan-bg.jpg");
+  background-image: url("../Images/japan-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
 
 }
 .country.mexico{
-  background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Images/mexico-bg.jpg");
+  background-image: url("../Images/mexico-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
 
 .country.turkey{
-  background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../Images/turkey-bg.jpg");
+  background-image: url("../Images/turkey-bg.jpg");
   background-attachment: fixed;
   background-size: cover;
 }
@@ -44,6 +74,13 @@ html{
   text-align: center;
   width: 50%;
   color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: 500ms;
+}
+
+.flag:hover, .info:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: 500ms;
 }
 
 .flag img{
