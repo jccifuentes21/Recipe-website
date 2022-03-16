@@ -549,4 +549,4 @@ if (imageNo == 0) {
 }
 picEL.src = images[imageNo];
 
-$("reco-recipe").fadeOut("slow");
+$("reco-recipe").fadeIn("slow");
