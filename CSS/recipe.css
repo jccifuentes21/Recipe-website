@@ -181,3 +181,11 @@ body{
 .recipe_step_title h1 {
     margin-left: 10px;
 }
+.recipe_step img {
+    height: 315px;
+    border-radius: 12px;
+    display: inline-block;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
