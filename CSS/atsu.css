@@ -6,14 +6,10 @@ a {
     padding: 0;
     margin: 0;
 }
-
-body {
-    overflow-x: hidden;
-}
-.none{
+.none {
     display: none !important;
 }
-.hero-page{
+.hero-page {
     width: 100%;
     background-color: aliceblue;
     position: relative;
@@ -26,18 +22,21 @@ body {
 }
 
 /* title */
-.title-today::after, .title-intro::after {
+.title-today::after,
+.title-intro::after {
     content: "";
     display: block;
     border-bottom: 1px solid #121212;
     margin: -17px 0 35px;
 }
 
-.title-today, .title-intro {
+.title-today,
+.title-intro {
     text-align: center;
 }
 
-.title-today span, .title-intro span {
+.title-today span,
+.title-intro span {
     background-color: #fff;
     padding: 10px;
     letter-spacing: 3px;
@@ -63,11 +62,17 @@ body {
     width: 300px;
 }
 
-.reco-recipe-sent,.reco-recipe-sent1,.reco-recipe-sent2,.reco-recipe-sent3{
+.reco-recipe-sent,
+.reco-recipe-sent1,
+.reco-recipe-sent2,
+.reco-recipe-sent3 {
     width: 45%;
 }
 
-.btn,.btn1,.btn2,.btn3 {
+.btn,
+.btn1,
+.btn2,
+.btn3 {
     border: 1px solid;
     display: inline-block;
     padding: 1%;
@@ -88,8 +93,13 @@ body {
     padding-top: 5%;
 }
 
-.atsu, .naomi, .juan, .ozan {
+.atsu,
+.naomi,
+.juan,
+.ozan {
     width: 50%;
+    height: 300px;
+    object-fit: contain;
 }
 
 .name {
@@ -113,70 +123,98 @@ body {
 .footer-box p {
     padding-right: 5%;
 }
-.pic-hero{
+.pic-hero {
     width: 400px;
 }
-.list {
-    height: 200px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+
+
+#wrap {
+    left: 0;
+    top: 0;
+    width: 89%;
+    height: 100%;
+    display: flex;
+    align-items: stretch;
+    margin: 0 25%;
+    padding: 10% 0 14% 0;
 }
-
-.list li {
-    list-style-type: none;
-
-    width: 200px;
-    height: 200px;
-    opacity: .25;
-    position: absolute;
-    left: 50%;
-    margin-left: -100px;
-    border-radius: 2px;
-    background: #9C89B8;
-    transition: transform 1s, opacity 1s;
+.hb {
+    position: relative;
+    width: 25%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    transform: scale(0.97);
 }
-
-.list .act {
+.c {
+    position: relative;
+    display: block;
+    max-width: 90%;
+}
+.c img {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 2;
+}
+.txt {
+    position: absolute;
+    top: 100%;
+    left: 10%;
+    width: 80%;
+    opacity: 0;
+    padding: 1em 0 0 1em;
+    border-left: 1px solid;
+    z-index: 1;
+    transform: scaleY(1) translateY(-50px);
+    transition: transform 0.2s, opacity 0.5s;
+}
+h1 {
+    font-size: 1.2em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.hb:hover .txt {
     opacity: 1;
+    transform: scaleY(1) translateY(0);
 }
-
-.list .prev,
-.list .next {
-    cursor: pointer;
-}
-
-.list .prev {
-    transform: translateX(-220px) scale(.85);
-}
-
-.list .next {
-    transform: translateX(220px) scale(.85);
-}
-
-.list .hide {
-    transform: translateX(-420px) scale(.85);
-}
-
-.list .new-next {
-    transform: translateX(420px) scale(.85);
-}
-
-.list .hide,
-.list .new-next {
+.fullBg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     opacity: 0;
-    transition: opacity .5s, transform .5s;
+    transition: transform 0.5s, opacity 0.5s;
+    transform: scale(1);
+    z-index: 1;
 }
-
-.swipe {
-    width: 270px;
-    height: 200px;
-    position: absolute;
-    background-color: green;
-    border-radius: 2px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.fullBg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    opacity: 0.5;
+}
+.hb:hover + .fullBg {
     opacity: 0;
+    transform: scale(1.02);
+}
+.credits {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 1.5em;
+    font-size: 0.8em;
+    text-align: right;
+    font-style: italic;
+    opacity: 0.8;
+    transition: opacity 0.2;
+    z-index: 3;
+}
+.credits:hover {
+    text-decoration: underline;
+    opacity: 1;
 }
