@@ -11,6 +11,7 @@
 .history-top {
     background-color: #cccccc;
     background-image: linear-gradient(#FAE952, #F05D3C);
+    margin-top: -1.5rem;
 }
 
 .img-flags {
@@ -92,4 +93,9 @@
 
 .his-img-column {
     padding: 15px;
+}
+
+.history-text{
+    padding-top: 4rem;
+    margin-top: -4rem;
 }
