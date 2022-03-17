@@ -1,26 +1,24 @@
-document.querySelector('.btn-demo').addEventListener('click', next);
-document.querySelector('.btn1-demo').addEventListener('click', next1);
-document.querySelector('.btn2-demo').addEventListener('click', remove);
+$(document).ready(function () {
+    var docWidth = $('body').width(),
+        $wrap = $('#wrap'),
+        $images = $('#wrap .hb'),
+        slidesWidth = $wrap.width();
 
+    $(window).on('resize', function () {
+        docWidth = $('body').width();
+        slidesWidth = $wrap.width();
+    })
 
-function next() {
-    document.querySelector('.tur').classList.add('hide')
-    document.querySelector('.jap').classList.add('new-next')
-    document.querySelector('.mex').classList.add('new-next1')
-}
-function next1(){
-    document.querySelector('.jap').classList.add('go-sub1')
-    document.querySelector('.tur').classList.add('go-main')
-    document.querySelector('.mex').classList.add('go-sub2')
-}
-function next2(){
-    
-}
-function remove(){
-    document.querySelector('.jap').classList.remove('new-next','go-sub1')
-    document.querySelector('.tur').classList.remove('hide','go-main')
-    document.querySelector('.mex').classList.remove('new-next1','go-sub2')
-}
+    $(document).mousemove(function (e) {
+        var mouseX = e.pageX,
+            offset = mouseX / docWidth * slidesWidth - mouseX / 2;
+
+        $images.css({
+            '-webkit-transform': 'translate3d(' + -offset + 'px,0,0)',
+            'transform': 'translate3d(' + -offset + 'px,0,0)'
+        });
+    });
+})
 const recipe = document.querySelector('.reco-recipe-sent')
 const recipe1 = document.querySelector('.reco-recipe-sent1')
 const recipe2 = document.querySelector('.reco-recipe-sent2')
