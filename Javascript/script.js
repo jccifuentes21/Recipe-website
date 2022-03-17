@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $('.scroll-down').fadeOut(2000)
+  $('.scroll-down').fadeOut(1200)
 
   window.onscroll = function() {scrollFunction()};
 
