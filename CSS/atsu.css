@@ -90,6 +90,8 @@ body {
 
 .atsu, .naomi, .juan, .ozan {
     width: 50%;
+    height: 300px;
+    object-fit: contain;
 }
 
 .name {
@@ -116,67 +118,72 @@ body {
 .pic-hero{
     width: 400px;
 }
-.list {
-    height: 200px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%)
+
+
+.slide-box{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
-
-.list li {
-    list-style-type: none;
-
+.tur,.jap,.mex{
     width: 200px;
+}
+.jap{
+    width: 300px;
     height: 200px;
-    opacity: .25;
-    position: absolute;
-    left: 50%;
-    margin-left: -100px;
     border-radius: 2px;
-    background: #9C89B8;
-    transition: transform 1s, opacity 1s;
-}
+    transition: transform 1s ease-in-out, opacity 1s;
 
-.list .act {
-    opacity: 1;
 }
-
-.list .prev,
-.list .next {
-    cursor: pointer;
-}
-
-.list .prev {
-    transform: translateX(-220px) scale(.85);
-}
-
-.list .next {
-    transform: translateX(220px) scale(.85);
-}
-
-.list .hide {
-    transform: translateX(-420px) scale(.85);
-}
-
-.list .new-next {
-    transform: translateX(420px) scale(.85);
-}
-
-.list .hide,
-.list .new-next {
-    opacity: 0;
-    transition: opacity .5s, transform .5s;
-}
-
-.swipe {
-    width: 270px;
+.tur,.mex{
+    width: 300px;
     height: 200px;
-    position: absolute;
-    background-color: green;
+    /* opacity: .50; */
     border-radius: 2px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
+    transition: transform 1s ease-in-out, opacity 1s;
 }
+.tur{
+    transform: translateX(-22px) scale(.85);
+}
+.mex{
+    transform: translateX(22px) scale(.85);
+}
+
+/* second */
+.jap.new-next{
+    transform: translateX(-360px) scale(.85);
+    z-index: 2;
+    position: relative;
+}
+.tur.hide {
+    transform: translateX(640px) scale(.85);
+    z-index: 2;
+    position: relative;
+}
+.mex.new-next1{
+    width: 300px;
+    height: 200px;
+    border-radius: 2px;
+    transform: translateX(-340px) scale(1.2) ;
+    z-index: 2;
+    position: relative;
+}
+
+/* thired */
+.tur.hide.go-main{
+    width: 300px;
+    height: 200px;
+    border-radius: 2px;
+    transform: translateX(340px) scale(1.2) !important;
+    z-index: 2;
+    position: relative;
+}
+.jap.new-next.go-sub1{
+    transform: translateX(370px) scale(.85);
+    z-index: 1;
+    position: relative;
+}
+.mex.new-next1.go-sub2{
+    transform: translateX(-640px) scale(.85);
+}
+
