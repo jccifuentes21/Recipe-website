@@ -44,8 +44,9 @@ body{
 }
 .content_title span {
     color: #fff;
-    font-size: 5.2rem;
+    font-size: 5rem;
     font-weight: 600;
+    width: fit-content;
 }
 .content_icon {
     display: flex;
@@ -134,6 +135,7 @@ body{
     justify-content: center;
     flex-direction: column;
     width: 50%;
+    height: 10rem;
     margin: 125px 100px;
 }
 .nut p {
@@ -158,12 +160,11 @@ body{
     border-radius: 10px;
     flex-direction: column;
     width: 100%;
-    margin: 10px 10px;
-    height: 250px;
+    margin: 10px ;
     padding: 10px 10px;
 }
 .tips_box h2 {
-    margin: 0;
+    margin: 1rem;
 }
 .tips_box  p {
     margin: 0;
@@ -182,7 +183,7 @@ body{
     margin-left: 10px;
 }
 .recipe_step img {
-    height: 315px;
+    height: auto;
     border-radius: 12px;
     display: inline-block;
     width: 600px;
