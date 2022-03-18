@@ -44,9 +44,10 @@ body{
 }
 .content_title span {
     color: #fff;
-    font-size: 5rem;
+    font-size: 5.2rem;
     font-weight: 600;
-    width: fit-content;
+    display: flex;
+    justify-content: center;
 }
 .content_icon {
     display: flex;
@@ -135,8 +136,7 @@ body{
     justify-content: center;
     flex-direction: column;
     width: 50%;
-    height: 10rem;
-    margin: 125px 100px;
+    margin: 390px 50px;
 }
 .nut p {
     text-align: center;
@@ -160,11 +160,12 @@ body{
     border-radius: 10px;
     flex-direction: column;
     width: 100%;
-    margin: 10px ;
+    margin: 10px 10px;
+    height: 250px;
     padding: 10px 10px;
 }
 .tips_box h2 {
-    margin: 1rem;
+    margin: 0;
 }
 .tips_box  p {
     margin: 0;
@@ -183,24 +184,13 @@ body{
     margin-left: 10px;
 }
 .recipe_step img {
-    height: auto;
     border-radius: 12px;
     display: inline-block;
-    width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#chicken-img{
-    width: 100%;
-}
-
-.scroll {
-    position: fixed;
-    bottom: 15px;
-    right: 230px;
-    background-color: rgba(245, 152, 65, 0.658);
-    cursor: pointer;
-    width: 50px;
-    height: 30px;
+.recipe_step h2 {
+    display: flex;
+    justify-content: center;
 }
