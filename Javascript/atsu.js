@@ -69,5 +69,5 @@ if (imageNo == 0) {
 picEL.src = images[imageNo];
 
 $(".reco-recipe").hide()
-$(".reco-recipe").show(2500)
+$(".reco-recipe").show(4000)
 // $(".reco-recipe").fadeOut("slow");
