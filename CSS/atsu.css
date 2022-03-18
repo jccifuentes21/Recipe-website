@@ -172,7 +172,6 @@ a {
   transform:scaleY(1) translateY(-50px);
   transition:transform .2s, opacity .5s;
   color: black;
-  
 }
 h1 {
   font-size:1.2em;
