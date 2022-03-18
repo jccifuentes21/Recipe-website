@@ -1,3 +1,5 @@
+*{ scroll-behavior: smooth; }
+
 .history-header {
     text-align: center;
     font-size: 50px;

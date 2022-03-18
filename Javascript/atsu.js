@@ -18,6 +18,20 @@ $(document).ready(function () {
             'transform': 'translate3d(' + -offset + 'px,0,0)'
         });
     });
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.documentElement.scrollTop > 20) {
+        $(".to-top").fadeIn('slow');
+        } else {
+        $(".to-top").fadeOut('slow');
+        }
+    }
+
+    $(".to-top").click(function(){
+        $('html, body').animate({ scrollTop: 0 }, "slow");
+    })
 })
 const recipe = document.querySelector('.reco-recipe-sent')
 const recipe1 = document.querySelector('.reco-recipe-sent1')
@@ -37,7 +51,7 @@ recipe1.classList.add('none')
 recipe2.classList.add('none')
 recipe3.classList.add('none')
 const picEL = document.getElementById('pic-today');
-const images = ['Images/home-pic/chicken-home.jpg', 'Images/home-pic/tacos.jpg', 'images/home-pic/doner.jpg', 'Images/home-pic/coro-meal.jpg']
+const images = ['Images/chicken-resized.jpg', 'Images/nao-resized.jpg', 'Images/ozan-resized.jpg', 'Images/ajiaco-resized.jpg']
 const imageNo = Math.floor(Math.random() * images.length)
 if (imageNo == 0) {
     recipe.classList.remove('none')

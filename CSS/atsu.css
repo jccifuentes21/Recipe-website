@@ -1,10 +1,12 @@
 a {
     text-decoration: none;
+    
 }
 
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 .none {
     display: none !important;
@@ -19,6 +21,8 @@ a {
     width: 1000px;
     text-align: center;
     margin: 0 auto;
+    margin-top: -4rem;
+    padding-top: 5rem;
 }
 
 /* title */
@@ -47,7 +51,8 @@ a {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding-top: 10%;
+    align-items: center;
+    padding-top: 2rem;
 }
 
 /* .reco-recipe-sent1,.reco-recipe-sent2,.reco-recipe-sent3,.reco-recipe-sent4{
@@ -73,11 +78,29 @@ a {
 .btn1,
 .btn2,
 .btn3 {
-    border: 1px solid;
     display: inline-block;
-    padding: 1%;
     margin: 4%;
     text-transform: uppercase;
+}
+
+.btn a,
+.btn1 a,
+.btn2 a,
+.btn3 a{
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 1em;
+    color: white;
+    transition: 250ms;
+    text-decoration: none;
+}
+
+.btn a:hover,
+.btn1 a:hover,
+.btn2 a:hover,
+.btn3 a:hover{
+    background-color: black;
+    scale: 1.02;
 }
 
 /* intro Author */
@@ -126,6 +149,23 @@ a {
 .pic-hero {
     width: 400px;
 }
+
+.to-top{
+    display: none;
+    inset: auto 2rem 2rem auto;
+    position: fixed;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 1em;
+    transition: 500ms;
+  }
+  
+  .to-top:hover{
+    background-color: black;
+    transition: 500ms;
+  }
 
 
 
