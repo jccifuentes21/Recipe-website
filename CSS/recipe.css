@@ -193,5 +193,14 @@ body{
 
 #chicken-img{
     width: 100%;
+}
 
+.scroll {
+    position: fixed;
+    bottom: 15px;
+    right: 230px;
+    background-color: rgba(245, 152, 65, 0.658);
+    cursor: pointer;
+    width: 50px;
+    height: 30px;
 }
