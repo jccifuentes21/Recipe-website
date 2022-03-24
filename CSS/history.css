@@ -3,17 +3,18 @@
 .history-header {
     text-align: center;
     font-size: 50px;
-    font-family: 'Parisienne', cursive;
 }
 
 .history-header h2 {
     margin-top: 0%;
+    font-style:oblique;
 }
 
-.history-top {
+.hero-container {
     background-color: #cccccc;
     background-image: linear-gradient(#FAE952, #F05D3C);
     margin-top: -1.5rem;
+    padding: 2rem 0 .5rem;
 }
 
 .img-flags {
@@ -54,10 +55,24 @@
     white-space: nowrap;
 }
 
+.to-top{
+    display: none;
+    inset: auto 2rem 2rem auto;
+    position: fixed;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    padding: 1em;
+    border-radius: 1em;
+    transition: 500ms;
+  }
+  
+.to-top:hover{
+    background-color: black;
+    transition: 500ms;
+}
 
-
-
-#cme_toTopBut {
+/* #cme_toTopBut {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -75,7 +90,7 @@
 #cme_toTopBut:hover {
     background-color: #555555;
     color: white;
-}
+} */
 
 .history-content {
     padding: 2px 120px 50px 120px;

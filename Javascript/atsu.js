@@ -1,12 +1,12 @@
 $(document).ready(function () {
     var docWidth = $('body').width(),
-        $wrap = $('#wrap'),
-        $images = $('#wrap .hb'),
-        slidesWidth = $wrap.width();
+        $hero = $('#hero'),
+        $images = $('#hero .recipe-btn'),
+        slidesWidth = $hero.width();
 
     $(window).on('resize', function () {
         docWidth = $('body').width();
-        slidesWidth = $wrap.width();
+        slidesWidth = $hero.width();
     })
 
     $(document).mousemove(function (e) {
@@ -33,14 +33,20 @@ $(document).ready(function () {
         $('html, body').animate({ scrollTop: 0 }, "slow");
     })
 })
-const recipe = document.querySelector('.reco-recipe-sent')
-const recipe1 = document.querySelector('.reco-recipe-sent1')
-const recipe2 = document.querySelector('.reco-recipe-sent2')
-const recipe3 = document.querySelector('.reco-recipe-sent3')
-const btnEl = document.querySelector('.btn')
-const btn1El = document.querySelector('.btn1')
-const btn2El = document.querySelector('.btn2')
-const btn3El = document.querySelector('.btn3')
+
+// Variable declaring
+const recipe = document.getElementById('chosen-text-0')
+const recipe1 = document.getElementById('chosen-text-1')
+const recipe2 = document.getElementById('chosen-text-2')
+const recipe3 = document.getElementById('chosen-text-3')
+
+
+const btnEl = document.querySelector('#btn-0')
+const btn1El = document.querySelector('#btn-1')
+const btn2El = document.querySelector('#btn-2')
+const btn3El = document.querySelector('#btn-3')
+
+
 btnEl.classList.add('none')
 btn1El.classList.add('none')
 btn2El.classList.add('none')
@@ -50,9 +56,11 @@ recipe.classList.add('none')
 recipe1.classList.add('none')
 recipe2.classList.add('none')
 recipe3.classList.add('none')
-const picEL = document.getElementById('pic-today');
+
+const picEL = document.getElementById('recipe-img');
 const images = ['Images/chicken-resized.jpg', 'Images/nao-resized.jpg', 'Images/ozan-resized.jpg', 'Images/ajiaco-resized.jpg']
 const imageNo = Math.floor(Math.random() * images.length)
+
 if (imageNo == 0) {
     recipe.classList.remove('none')
     btnEl.classList.remove('none')
@@ -68,6 +76,6 @@ if (imageNo == 0) {
 }
 picEL.src = images[imageNo];
 
-$(".reco-recipe").hide()
-$(".reco-recipe").show(4000)
+$(".recipe-container").hide()
+$(".recipe-container").show(4000)
 // $(".reco-recipe").fadeOut("slow");
