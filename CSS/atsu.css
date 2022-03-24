@@ -7,6 +7,8 @@
 
 :root{
     --navBar: 4rem;
+    --white: #ffffff;
+
 }
 
 .none {
@@ -35,7 +37,7 @@
 
 .title-today span ,
 .authors-title span{
-    background-color: #fff;
+    background-color: var(--white);
     padding: 10px;
     letter-spacing: 3px;
 }
