@@ -29,10 +29,10 @@
     </nav>
   </aside>
 
-  <section class="wrap-container">
-    <div id="wrap">
-      <a href="HTML/recipe-col.html" class="hb">
-        <div class="c">
+  <section class="hero-container">
+    <div id="hero">
+      <a href="HTML/recipe-col.html" class="recipe-btn">
+        <div class="recipe-img">
           <img src="Images/ajiaco-resized.jpg" alt=""/>
           <div class="txt">
             <h1>Ajiaco Colombiano</h1>
@@ -40,8 +40,8 @@
           </div>
         </div>
       </a>
-      <a href="HTML/recipe-jap.html" class="hb">
-        <div class="c">
+      <a href="HTML/recipe-jap.html" class="recipe-btn">
+        <div class="recipe-img">
           <img src="Images/chicken-resized.jpg" alt=""/>
           <div class="txt">
             <h1>Chicken Namban</h1>
@@ -52,8 +52,8 @@
           </div>
         </div>
       </a>
-      <a href="HTML/recipe-mx.html" class="hb">
-        <div class="c">
+      <a href="HTML/recipe-mx.html" class="recipe-btn">
+        <div class="recipe-img">
           <img src="Images/nao-resized.jpg" alt=""/>
           <div class="txt">
             <h1>Mexican Mole</h1>
@@ -61,13 +61,14 @@
           </div>
         </div>
       </a>
-      <a href="HTML/recipe-turkey.html" class="hb">
-        <div class="c">
+      <a href="HTML/recipe-turkey.html" class="recipe-btn">
+        <div class="recipe-img">
           <img src="Images/ozan-resized.jpg" alt=""/>
           <div class="txt">
             <h1>Beyti Sarma</h1>
             <p>Beyti is a Turkish dish consisting of minced meat or meat, 
-              grilled on a skewer, served with lavash, topped with tomato sauce and yogurt.</p>
+              grilled on a skewer, served with lavash, topped with tomato sauce and yogurt.
+            </p>
           </div>
         </div>
       </a>
@@ -76,92 +77,93 @@
   </section>
 
   <section class="todays-recipe">
-    <div class="container">
-      <h2 class="title-today">
-        <span>Today's Recipe</span>
-      </h2>
-      <div class="reco-recipe">
-        <div class="pic-box">
-          <img src="" class="pic-today" id = "pic-today">
-        </div>
-        <div class="reco-recipe-sent">
-          <div class="name">Chiken Namban</div>
-            Chicken Namban is really popluer in Japan. Mostly, young people love this food. 
-            With a light crispy egg batter shell, marinated in a sweet and tangy sauce, Chicken Nanban
-            is an irresistably delicious Japanese fried chicken.
-        </div>
-        <div class="reco-recipe-sent1">
-          <div class="name">Mexican Mole</div>
+    <h2 class="title-today">
+      <span>Today's Recipe</span>
+      <hr class="page-break">
+    </h2>
+    <div class="recipe-container">
+      <div class="img-container">
+        <img src="" id = "recipe-img">
+      </div>
+      <div class="recipe-text" id="chosen-text-0">
+        <h3 class="recipe-title">Chiken Namban</h3>
+        <p>
+          Chicken Namban is really popluer in Japan. Mostly, young people love this food. 
+          With a light crispy egg batter shell, marinated in a sweet and tangy sauce, Chicken Nanban
+          is an irresistably delicious Japanese fried chicken.
+        </p>
+      </div>
+      <div class="recipe-text" id="chosen-text-1">
+        <h3 class="recipe-title">Mexican Mole</h3>
+        <p>
           Mexican Mole Sauce is made with layers of complex and bold flavors, simmered together over a long period of time before being blended until smooth. Learn how to make this delicious chicken mole and serve with warm rice, beans or wrapped in tortillas.<br>
           This recipe, while not 100 percent traditional, isn't exactly fast and easy either. While one may expect to spend at least a day, if not days, to make the most traditional and authentic mole, you can expect to spend approximately 2 to 3 hours to get this awesome chicken mole recipe ready and on the table for you and your family to enjoy.
-        </div>
-        <div class="reco-recipe-sent2">
-          <div class="name">Beyti Sarma</div>
+        <p>
+      </div>
+      <div class="recipe-text" id="chosen-text-2">
+        <h3 class="recipe-title">Beyti Sarma</h3>
+
+        <p>
           Beyti is a Turkish dish consisting of minced meat or meat, 
-        grilled on a skewer, served with lavash, topped with tomato sauce and yogurt. 
-        The name of the dish comes from Beyti Güler, 
-        owner of the popular Beyti restaurant in Istanbul.
-        </div>
-        <div class="reco-recipe-sent3">
-          <div class="name">Ajiaco Colombiano</div>
+          grilled on a skewer, served with lavash, topped with tomato sauce and yogurt. 
+          The name of the dish comes from Beyti Güler, 
+          owner of the popular Beyti restaurant in Istanbul.
+        </p>
+
+      </div>
+      <div class="recipe-text" id="chosen-text-3">
+        <h3 class="recipe-title">Ajiaco Colombiano</h3>
+        <p>
           Ajiaco Colombiano is a traditional thick soup from Colombia's capital, Bogotá. Perfect for cold weather, this staple will always remind me of home. This is something we don't eat very often; it's reserved for special occasions like big family dinners
-        </div>
+        </p>
       </div>
-      <div class="btn"><a href="./HTML/recipe-jap.html">see more</a></div>
-      <div class="btn1"><a href="./HTML/recipe-mx.html">see more</a></div>
-      <div class="btn2"><a href="./HTML/recipe-turkey.html">see more</a></div>
-      <div class="btn3"><a href="./HTML/recipe-col.html">see more</a></div>
-
     </div>
+      <a class="goto-recipe-btn" id="btn-0" href="./HTML/recipe-jap.html">see more</a>
+      <a class="goto-recipe-btn" id="btn-1" href="./HTML/recipe-mx.html">see more</a>
+      <a class="goto-recipe-btn" id="btn-2" href="./HTML/recipe-turkey.html">see more</a>
+      <a class="goto-recipe-btn" id="btn-3"href="./HTML/recipe-col.html">see more</a>
   </section>
 
-  <section class="intro">
-    <div class="container" id="Authors">
-      <h2 class="title-intro">
-        <span >Authors</span>
-      </h2>
-      <div class="profile">
-        <div class="indivi">
-          <img src="Images/home-pic/atsu3.jpg" class="atsu">
-          <div class="name">Atsuya Tanaka</div>
-          <div class="indivi-sent">
-            I am a boy who likes cooking. My favorite cooking is pasta, especially, carbonara and 
-            tomato spagetty. Mmy interest is reading a book and watching and playing football.
-          </div>
-        </div>
-        <div class="indivi">
-          <img src="Images/home-pic/naomi.jpg" class="naomi">
-          <div class="name">Naomi Vega</div>
-          <div class="indivi-sent">
-            Outgoing 24 year old girl from Mexico City. I like reading, drawing, playing the piano and hanging out with friends!
-          </div>
-        </div>
-        <div class="indivi">
-          <img src="Images/JuanCa.jpg" class="juan">
-          <div class="name">Juan Camilo Cifuentes</div>
-          <div class="indivi-sent">
-            Mechatronics Engineer, 24 years old. Passionate about coding, golf, and technology. Born in Colombia, but lived mostly in Mexico. I love puppies and cats. 
-          </div>
-        </div>
-        <div class="indivi">
-          <img src="Images/home-pic/ozan.jpg" class="ozan">
-          <div class="name">Ozan Atesmen</div>
-          <div class="indivi-sent">
-            Hi, my name is Ozan, I like to cook and eat. I'm from Turkey. I'm single, and ready to mingle.
-          </div>
-        </div>
+  <section class="authors-container" id="Authors">
+    <h2 class="authors-title">
+      <span>Authors</span>
+      <hr class="page-break">
+    </h2>
+    <div class="authors-grid">
+      <div class="author">
+        <img src="Images/home-pic/atsu3.jpg" class="author-img">
+        <h3 class="author-name">Atsuya Tanaka</h3>
+        <p class="author-description">
+          I am a boy who likes cooking. My favorite cooking is pasta, especially, carbonara and 
+          tomato spagetty. Mmy interest is reading a book and watching and playing football.
+        </p>
+      </div>
+      <div class="author">
+        <img src="Images/home-pic/naomi.jpg" class="author-img">
+        <h3 class="author-name">Naomi Vega</h3>
+        <p class="author-description">
+          Outgoing 24 year old girl from Mexico City. I like reading, drawing, playing the piano and hanging out with friends!
+        </p>
+      </div>
+      <div class="author">
+        <img src="Images/JuanCa.jpg" class="author-img">
+        <h3 class="author-name">Juan Camilo Cifuentes</h3>
+        <p class="author-description">
+          Mechatronics Engineer, 24 years old. Passionate about coding, golf, and technology. Born in Colombia, but lived mostly in Mexico. I love puppies and cats. 
+        </p>
+      </div>
+      <div class="author">
+        <img src="Images/home-pic/ozan.jpg" class="author-img">
+        <h3 class="author-name">Ozan Atesmen</h3>
+        <p class="author-description">
+          Hi, my name is Ozan, I like to cook and eat. I'm from Turkey. I'm single, and ready to mingle.
+        </p>
       </div>
     </div>
   </section>
+
   <a class="to-top" href="#">To Top</a>
 
-  <!-- <footer>
-    <div class="footer-box">
-      <p><a href="">home</a></p>
-      <p><a href="">recipe by country</a></p>
-      <p><a href="">world couisine history</a></p>
-    </div>
-  </footer> -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
   <script src="./Javascript/atsu.js"></script>
