@@ -12,9 +12,9 @@
     --red: #f55c41a8;
 }
 
-.none {
+/* .none {
     display: none !important;
-}
+} */
 
 .todays-recipe,
 .authors-container {
@@ -60,13 +60,17 @@
 #recipe-img {
     width: 80%;
 }
-
-.recipe-text {
+.recipe-text{
     width: 45%;
+    display: none;
+}
+.recipe-text.show{
+    width: 45%;
+    display: block;
 }
 
 .goto-recipe-btn {
-    display: inline-block;
+    display: none;
     margin: 4%;
     text-transform: uppercase;
     padding: 1rem;
@@ -75,6 +79,9 @@
     color: var(--white);
     transition: 250ms;
     text-decoration: none;
+}
+.goto-recipe-btn.show{
+    display: inline-block;  
 }
 
 .goto-recipe-btn:hover {
