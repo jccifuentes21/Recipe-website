@@ -7,8 +7,10 @@
     --yellow: #f5bc41a8;
     --red: #f55c41a8;
 }
-.container {
-    max-width: 960px;
+.recipe-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     width: 100%;
     padding: 0 15rem;
     margin-left: auto;
@@ -54,6 +56,7 @@
 .divider {
     height: 1px;
     background-color: var(--yellow);
+    border: none    ;
 }
 
 .recipe-description{
@@ -111,6 +114,7 @@
 .ingredients_chechkbox input:checked ~ .chechkmark {
     background-color: var(--yellow);
 }
+
 .checkmark:after {
     content: "";
     position: absolute;
