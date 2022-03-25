@@ -37,6 +37,7 @@
     padding-top: calc(1rem + var(--navBar));
 }
 
+
 .title-today span,
 .authors-title span {
     background-color: var(--white);
