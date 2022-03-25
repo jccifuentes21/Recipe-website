@@ -1,5 +1,12 @@
 *{ scroll-behavior: smooth; }
 
+:root {
+    --navBar: 4rem;
+    --white: white;
+    --yellow: #f5bc41a8;
+    --red: #f55c41a8;
+}
+
 .hero-header {
     text-align: center;
     font-size: 50px;
@@ -80,7 +87,7 @@
 }
 
 .history-content h3 {
-    color: #CB591C;
+    color: var(--red);
 }
 
 .history-img {

@@ -1,11 +1,14 @@
 *{
     box-sizing: border-box;
 }
-
-.recipe-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+:root {
+    --navBar: 4rem;
+    --white: white;
+    --yellow: #f5bc41a8;
+    --red: #f55c41a8;
+}
+.container {
+    max-width: 960px;
     width: 100%;
     padding: 0 15rem;
     margin-left: auto;
@@ -50,8 +53,7 @@
 }
 .divider {
     height: 1px;
-    background-color: rgb(245 188 65 / 66%);
-    border: none    ;
+    background-color: var(--yellow);
 }
 
 .recipe-description{
@@ -67,7 +69,7 @@
 .detail {
     display: flex;
     align-items: center;
-    border: 2px solid rgb(245 188 65 / 66%);
+    border: 2px solid var(--yellow);
     border-radius: 10px;
     justify-content: center;
     flex-direction: column;
@@ -106,8 +108,8 @@
 .ingredient:hover input ~ .checkmark {
     background-color: #ccc;
 }
-.ingredient input:checked ~ .checkmark {
-    background-color: rgb(245 188 65 / 66%);
+.ingredients_chechkbox input:checked ~ .chechkmark {
+    background-color: var(--yellow);
 }
 .checkmark:after {
     content: "";
@@ -129,7 +131,7 @@
 .nutrition-facts {
     display: flex;
     align-items: center;
-    border: 2px solid rgb(245 188 65 / 66%);
+    border: 2px solid var(--yellow);
     border-radius: 50%;
     justify-content: center;
     flex-direction: column;
@@ -156,7 +158,7 @@
 .tips-box {
     display: flex;
     align-items: center;
-    border: 2px solid rgb(245 188 65 / 66%);
+    border: 2px solid var(--yellow);
     border-radius: 10px;
     flex-direction: column;
     width: 100%;
